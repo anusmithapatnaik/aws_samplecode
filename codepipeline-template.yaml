@@ -164,7 +164,7 @@
       Properties:
         Name: !Sub ${AWS::StackName}-Sonarqube-Token
         Type: StringList 
-        Value: !Ref SonarQubeScanToken
+        Value: 01ec293417fd7d9627f108e056abd42aa69e6102
 
     SSMParameterSonarQubeURL:
       Type: 'AWS::SSM::Parameter'
@@ -172,7 +172,7 @@
       Properties:
         Name: !Sub ${AWS::StackName}-SonarQubeURL
         Type: StringList 
-        Value: !Ref SonarQubeURLName
+        Value: https://sonarcloud.io
 
     SSMParameterForZapApiKey:
       Type: 'AWS::SSM::Parameter'
